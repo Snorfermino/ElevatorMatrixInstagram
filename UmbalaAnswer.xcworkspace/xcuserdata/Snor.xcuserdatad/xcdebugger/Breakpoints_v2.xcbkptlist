@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/CKWaveCollectionViewTransition/Classes/CKWaveCollectionViewAnimator.swift"
+            timestampString = "494740415.217718"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "enumerateVisibleCellsAndAddAnimations(_:sourceCollectionViewController:destinationCollectionViewController:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UmbalaAnswer.CKWaveCollectionViewAnimator.(enumerateVisibleCellsAndAddAnimations in _32B73D615D317D6049758EA9574195D9) (__C.CGPoint, sourceCollectionViewController : __ObjC.UICollectionViewController, destinationCollectionViewController : __ObjC.UICollectionViewController) -&gt; ()"
+                  moduleName = "UmbalaAnswer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Snor/Documents/Swift%20iOs/UmbalaAnswer/Pods/CKWaveCollectionViewTransition/Classes/CKWaveCollectionViewAnimator.swift"
+                  timestampString = "494740415.224465"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "250">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UmbalaAnswer.CKWaveCollectionViewAnimator.((enumerateVisibleCellsAndAddAnimations in _32B73D615D317D6049758EA9574195D9) (__C.CGPoint, sourceCollectionViewController : __ObjC.UICollectionViewController, destinationCollectionViewController : __ObjC.UICollectionViewController) -&gt; ()).(closure #1)"
+                  moduleName = "UmbalaAnswer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Snor/Documents/Swift%20iOs/UmbalaAnswer/Pods/CKWaveCollectionViewTransition/Classes/CKWaveCollectionViewAnimator.swift"
+                  timestampString = "494740415.224674"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CKWaveCollectionViewTransition.CKWaveCollectionViewAnimator.(enumerateVisibleCellsAndAddAnimations in _36D13A75C53BE5F3D69113CCE1392A61) (__C.CGPoint, sourceCollectionViewController : __ObjC.UICollectionViewController, destinationCollectionViewController : __ObjC.UICollectionViewController) -&gt; ()"
+                  moduleName = "CKWaveCollectionViewTransition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Snor/Documents/Swift%20iOs/UmbalaAnswer/Pods/CKWaveCollectionViewTransition/Classes/CKWaveCollectionViewAnimator.swift"
+                  timestampString = "494740415.224803"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "250">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CKWaveCollectionViewTransition.CKWaveCollectionViewAnimator.((enumerateVisibleCellsAndAddAnimations in _36D13A75C53BE5F3D69113CCE1392A61) (__C.CGPoint, sourceCollectionViewController : __ObjC.UICollectionViewController, destinationCollectionViewController : __ObjC.UICollectionViewController) -&gt; ()).(closure #1)"
+                  moduleName = "CKWaveCollectionViewTransition"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Snor/Documents/Swift%20iOs/UmbalaAnswer/Pods/CKWaveCollectionViewTransition/Classes/CKWaveCollectionViewAnimator.swift"
+                  timestampString = "494740415.225066"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

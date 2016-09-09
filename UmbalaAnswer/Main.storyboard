@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+            <string>Roboto-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Elevator View Controller-->
+        <scene sceneID="Upd-56-fwm">
+            <objects>
+                <viewController id="YDD-kp-JLc" customClass="ElevatorViewController" customModule="UmbalaAnswer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9dx-Zc-aI5"/>
+                        <viewControllerLayoutGuide type="bottom" id="kcP-rJ-0vV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vxc-0c-Ihg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6N-UY-1qv" customClass="FlatButton" customModule="Material">
+                                <rect key="frame" x="112" y="213" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="OPd-kJ-U1P"/>
+                                    <constraint firstAttribute="height" constant="30" id="SEE-Z2-9qS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Create Elevators">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pulseOpacity">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="0.22010817914309494" green="0.54428926670370292" blue="0.6878405448717948" alpha="0.82999999999999996" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goUp:" destination="YDD-kp-JLc" eventType="touchUpInside" id="2sI-z8-sQA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuM-TZ-fTr" customClass="MaterialButton">
+                                <rect key="frame" x="112" y="306" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kh4-vw-fsF"/>
+                                    <constraint firstAttribute="width" constant="150" id="oDL-7c-9Ly"/>
+                                </constraints>
+                                <state key="normal" title="Create Passenger">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pulseOpacity">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="0.15151150399626417" green="0.6878405448717948" blue="0.20765277872825522" alpha="0.82999999999999996" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goDown:" destination="YDD-kp-JLc" eventType="touchUpInside" id="SFA-Lh-3aP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPv-i2-6VO" customClass="FlatButton" customModule="Material">
+                                <rect key="frame" x="87" y="402" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3Ms-Wm-dLw"/>
+                                    <constraint firstAttribute="height" constant="30" id="Iva-NS-8Bf"/>
+                                </constraints>
+                                <state key="normal" title="Elevator get Passenger">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="0.6878405448717948" green="0.086491358898809351" blue="0.13878474684454661" alpha="0.82999999999999996" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnGoIn:" destination="YDD-kp-JLc" eventType="touchUpInside" id="W1S-iu-Vna"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W6N-UY-1qv" firstAttribute="top" secondItem="9dx-Zc-aI5" secondAttribute="bottom" constant="149" id="4Ex-ae-2yF"/>
+                            <constraint firstItem="CuM-TZ-fTr" firstAttribute="centerX" secondItem="Vxc-0c-Ihg" secondAttribute="centerX" id="7aU-JM-qfS"/>
+                            <constraint firstItem="CuM-TZ-fTr" firstAttribute="top" secondItem="W6N-UY-1qv" secondAttribute="bottom" constant="63" id="8Bc-It-m29"/>
+                            <constraint firstItem="W6N-UY-1qv" firstAttribute="centerX" secondItem="Vxc-0c-Ihg" secondAttribute="centerX" id="GZ7-Ej-Dma"/>
+                            <constraint firstItem="UPv-i2-6VO" firstAttribute="top" secondItem="CuM-TZ-fTr" secondAttribute="bottom" constant="66" id="LlI-R7-XXu"/>
+                            <constraint firstItem="UPv-i2-6VO" firstAttribute="centerX" secondItem="Vxc-0c-Ihg" secondAttribute="centerX" id="Tzh-9I-qej"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="z1d-jK-s61">
+                        <barButtonItem key="leftBarButtonItem" image="arrow_back_black_36x36" id="Ej5-Fl-Okg">
+                            <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onCancel:" destination="YDD-kp-JLc" id="xkR-LR-ZEc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="goInBtn" destination="UPv-i2-6VO" id="8Qm-QQ-bVN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYi-ZZ-aSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607.5" y="-591.5"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="UmbalaAnswer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXB-2s-LaU" customClass="FabButton" customModule="Material">
+                                <rect key="frame" x="127.5" y="246" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="bu8-PB-XwF"/>
+                                    <constraint firstAttribute="width" constant="120" id="kIi-kK-n4m"/>
+                                </constraints>
+                                <state key="normal" title="Image Matrix"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pulseOpacity">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="z2M-Of-y8c" kind="presentation" id="Cum-pj-O4P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sq-Rt-dMo" customClass="FabButton" customModule="Material">
+                                <rect key="frame" x="127" y="427" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Hgp-R2-ecV"/>
+                                    <constraint firstAttribute="width" constant="120" id="pZa-xp-I5I"/>
+                                </constraints>
+                                <state key="normal" title="Instagram"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Fnt-rk-fUX" kind="presentation" id="8DV-3B-er7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a11-B1-1te" customClass="FabButton" customModule="Material">
+                                <rect key="frame" x="127" y="85" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Ek1-MS-chC"/>
+                                    <constraint firstAttribute="width" constant="120" id="O0J-rf-KuU"/>
+                                </constraints>
+                                <state key="normal" title="Elevator"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pulseColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Pm0-kj-Qe6" kind="presentation" id="Xoe-fN-LoZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a11-B1-1te" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9K0-uc-VNh"/>
+                            <constraint firstItem="7Sq-Rt-dMo" firstAttribute="top" secondItem="OXB-2s-LaU" secondAttribute="bottom" constant="61" id="ES1-87-ABQ"/>
+                            <constraint firstItem="OXB-2s-LaU" firstAttribute="top" secondItem="a11-B1-1te" secondAttribute="bottom" constant="41" id="Hmv-i6-A3Y"/>
+                            <constraint firstItem="7Sq-Rt-dMo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R7V-z8-VBx"/>
+                            <constraint firstItem="a11-B1-1te" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="T2d-8I-xYG"/>
+                            <constraint firstItem="OXB-2s-LaU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lKf-3J-nU2"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="284.5"/>
+        </scene>
+        <!--Matrix View Controller-->
+        <scene sceneID="glf-31-TLu">
+            <objects>
+                <viewController id="MNS-Nl-CjQ" customClass="MatrixViewController" customModule="UmbalaAnswer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Qw-pT-KsD"/>
+                        <viewControllerLayoutGuide type="bottom" id="dI8-BO-fmT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BoN-GS-mAd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtV-lF-UPr">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDT-Bi-pbZ" customClass="FabButton" customModule="Material">
+                                        <rect key="frame" x="150.5" y="380" width="74" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="74" id="6Cn-ZR-r1o"/>
+                                            <constraint firstAttribute="width" constant="74" id="UDF-jR-4mc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                        <state key="normal" image="rotate_90_degrees_ccw_black_54x54"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="pulseOpacity">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="makeRotate:" destination="MNS-Nl-CjQ" eventType="touchUpInside" id="Xlx-96-1C4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="toString" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAg-qB-02j">
+                                        <rect key="frame" x="71" y="164" width="233.5" height="201.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gDT-Bi-pbZ" secondAttribute="bottom" constant="149" id="QtK-2i-OXJ"/>
+                                    <constraint firstItem="gDT-Bi-pbZ" firstAttribute="centerX" secondItem="wtV-lF-UPr" secondAttribute="centerX" id="o8W-yF-TXB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wtV-lF-UPr" secondAttribute="trailing" id="4h6-Kt-XXP"/>
+                            <constraint firstItem="wtV-lF-UPr" firstAttribute="leading" secondItem="BoN-GS-mAd" secondAttribute="leading" id="75z-hm-7eg"/>
+                            <constraint firstItem="wtV-lF-UPr" firstAttribute="top" secondItem="4Qw-pT-KsD" secondAttribute="bottom" id="AF1-tO-Qsr"/>
+                            <constraint firstItem="dI8-BO-fmT" firstAttribute="top" secondItem="wtV-lF-UPr" secondAttribute="bottom" id="HZG-ID-7Wc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZW1-5u-qLC">
+                        <barButtonItem key="leftBarButtonItem" tag="1" image="arrow_back_black_36x36" id="3Q4-J0-DaP">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="onCancel:" destination="MNS-Nl-CjQ" id="I3I-Xf-0gh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cancelBarButton" destination="3Q4-J0-DaP" id="W7Z-QX-HkN"/>
+                        <outlet property="enterButton" destination="gDT-Bi-pbZ" id="gJK-mM-mFN"/>
+                        <outlet property="numView" destination="wtV-lF-UPr" id="D9u-fa-KkU"/>
+                        <outlet property="toStringlabel" destination="ZAg-qB-02j" id="hel-Sh-Vin"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSg-w8-A4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607.5" y="342.5"/>
+        </scene>
+        <!--Instagram View Controller-->
+        <scene sceneID="4rO-jT-61L">
+            <objects>
+                <viewController id="zVm-oE-t1x" customClass="InstagramViewController" customModule="UmbalaAnswer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0G5-fv-vW5"/>
+                        <viewControllerLayoutGuide type="bottom" id="wa6-bP-j4q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DKB-wk-tJq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="toV-MX-yU4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="89" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pht-tr-Gnv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="386"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FollowingCell" rowHeight="89" id="0rj-HU-rPe" customClass="FollowingCell" customModule="UmbalaAnswer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="89"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0rj-HU-rPe" id="8WD-sa-gtn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="88.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMi-Au-4Xr">
+                                                    <rect key="frame" x="86" y="34" width="109" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPp-vp-ztX" customClass="FlatButton" customModule="Material">
+                                                    <rect key="frame" x="267" y="29" width="100" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="QMn-au-d4B"/>
+                                                        <constraint firstAttribute="height" constant="30" id="sjQ-xI-7pf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                    <state key="normal" title="Unfollow">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="pulseOpacity">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="pulseColor">
+                                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                            <color key="value" red="0.32472626811113547" green="1" blue="0.31223055499167818" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="followingPressed:" destination="0rj-HU-rPe" eventType="touchUpInside" id="8Ex-wT-cuP"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VxH-lQ-O6O">
+                                                    <rect key="frame" x="8" y="10" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="jOm-Aq-sy7"/>
+                                                        <constraint firstAttribute="height" constant="70" id="qWf-Qi-ruy"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dPp-vp-ztX" firstAttribute="centerY" secondItem="8WD-sa-gtn" secondAttribute="centerY" id="J6H-0b-sdg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dPp-vp-ztX" secondAttribute="trailing" id="jWA-2C-gWh"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="VxH-lQ-O6O" secondAttribute="leading" id="lA2-RC-pGn"/>
+                                                <constraint firstItem="VxH-lQ-O6O" firstAttribute="centerY" secondItem="8WD-sa-gtn" secondAttribute="centerY" id="mUR-uG-LdS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="followingButton" destination="dPp-vp-ztX" id="3xO-9S-Mhd"/>
+                                            <outlet property="userAvatarImageView" destination="VxH-lQ-O6O" id="hsb-rp-LAI"/>
+                                            <outlet property="usernameLabel" destination="AMi-Au-4Xr" id="rsy-21-GrT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="zVm-oE-t1x" id="iNZ-yc-qpn"/>
+                                    <outlet property="delegate" destination="zVm-oE-t1x" id="C6d-Xh-n3x"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wa6-bP-j4q" firstAttribute="top" secondItem="toV-MX-yU4" secondAttribute="bottom" id="36k-fs-Epx"/>
+                            <constraint firstAttribute="trailing" secondItem="toV-MX-yU4" secondAttribute="trailing" id="IYl-NY-xEN"/>
+                            <constraint firstItem="toV-MX-yU4" firstAttribute="top" secondItem="DKB-wk-tJq" secondAttribute="topMargin" constant="64" id="MGl-Af-0wy"/>
+                            <constraint firstItem="toV-MX-yU4" firstAttribute="leading" secondItem="DKB-wk-tJq" secondAttribute="leading" id="olL-wV-djR"/>
+                            <constraint firstItem="toV-MX-yU4" firstAttribute="top" secondItem="0G5-fv-vW5" secondAttribute="bottom" constant="8" id="yfX-7y-4VA"/>
+                            <constraint firstItem="wa6-bP-j4q" firstAttribute="top" secondItem="toV-MX-yU4" secondAttribute="bottom" constant="-36" id="zGM-FH-akW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="yfX-7y-4VA"/>
+                                <exclude reference="zGM-FH-akW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="ujE-sm-DiN">
+                        <barButtonItem key="leftBarButtonItem" image="arrow_back_black_36x36" id="W45-WJ-6tD">
+                            <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="CloseInstagram:" destination="zVm-oE-t1x" id="4dY-rS-wOu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="Pht-tr-Gnv" id="71i-0q-WH2"/>
+                        <outlet property="webView" destination="toV-MX-yU4" id="RFp-zj-Z4I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVn-hp-xmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607.5" y="1255.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bTh-BG-1we">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fnt-rk-fUX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ozH-dD-4Wf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zVm-oE-t1x" kind="relationship" relationship="rootViewController" id="87i-2j-bEb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGy-f3-0El" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020.5" y="1255.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jjG-kO-yyX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z2M-Of-y8c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TX5-ba-l1g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MNS-Nl-CjQ" kind="relationship" relationship="rootViewController" id="nWR-W6-niS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vkd-3P-4dg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020.5" y="342.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kN3-Yt-MEN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pm0-kj-Qe6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ATu-bP-dJU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YDD-kp-JLc" kind="relationship" relationship="rootViewController" id="JJJ-KM-Rpf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daZ-QZ-PGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020.5" y="-591.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_back_black_36x36" width="36" height="36"/>
+        <image name="rotate_90_degrees_ccw_black_54x54" width="54" height="54"/>
+    </resources>
+</document>
