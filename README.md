@@ -24,7 +24,7 @@ users, because the cliend ID of mine is for Sandbox Users only.
 
 Here's a walkthrough of implemented answer:
 
-<img src='http://imgur.com/ZkVhICF' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://imgur.com/ZkVhICF.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://imgur.com/RNMsgjS' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://imgur.com/BJsy0OU' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
